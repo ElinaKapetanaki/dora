@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    version="2.5">
+  
+	<!-- Application name and a short description -->
+	<display-name>web.xml</display-name>
+	<description>DORA application deployment descriptor (web.xml)</description>
+	
+	<!-- servlet definitions -->
+  	<servlet>
+		<servlet-name>createPostController</servlet-name>
+		<servlet-class>dora_app.CreatePostServlet</servlet-class>		
+	</servlet>
+	
+	<!-- servlet mappings -->
+	<servlet-mapping>
+		<servlet-name>createPostController</servlet-name>
+		<url-pattern>/createPostController</url-pattern>
+	</servlet-mapping>
+  
+	<!-- exception-type related error pages -->
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+  
+	<!-- Define welcome file list -->
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+  
+</web-app>

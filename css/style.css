@@ -1,0 +1,486 @@
+#log-in-container {
+    text-align: center;
+    height: 80vh;
+    margin: 0;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+#welcome-phrase h1 {
+    margin-bottom: 0.7em;
+}
+
+.banner-image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#welcome-phrase {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-container, .post-container{
+    border: 3px solid rgb(104,21,121); 
+    border-radius: 1.25em; 
+    padding: 2.5em; 
+    padding-bottom: 2em;
+    max-width: 31.25em; 
+    margin: 0 auto;
+    align-self: center;
+    background-color: white;
+}
+
+.form-control #search-bar {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-title{
+    text-align: center;
+}
+
+.btn-primary {
+    width: 50%;
+    background-color: rgb(104,21,121) !important;
+    border: 2px solid rgb(104,21,121) !important;
+    padding: 20px; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(136, 60, 149) !important;
+    border: 2px solid rgb(136,60,149) !important;
+}
+
+select#gender {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.sidebar {
+    background-color: rgb(104, 21, 121)! important;
+    width: 95px;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    align-items: center;
+    top: 0;
+}
+
+.sidebar a{
+    display: block;
+    text-align: center;
+    font-size: 1.15rem;
+    padding: 1.15rem;
+}
+
+.sidebar a:hover, .sidebar a.active{
+    background-color: white;
+}
+
+.text-logo {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    white-space: nowrap;
+    font-size: 45px;
+    padding: 15px;
+    color: black;
+}
+
+.btn.sign-out a, #hash a {
+    color:black;
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        height: 65px;
+        top: unset;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1000;
+    }
+    .text-logo {
+        writing-mode: horizontal-tb; 
+        transform: none;
+        white-space: normal;
+    }
+    .content-container {
+        margin-left: 5px !important;
+        margin-bottom: 70px !important;
+    }
+    #first-search-container{
+        margin-left: unset !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #monuments-photo img{
+        margin-top:15%;
+    }
+}
+
+.search-container {
+    padding: 10px;
+}
+
+#first-search-container {
+    text-align: center;
+    height: 100vh;
+    background-color: rgba(243, 243, 243, 255);
+    margin-left:95px;
+}
+
+#monuments-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.input-group {
+    max-width: 700px; 
+    margin: 0 auto; 
+}
+
+.form-control #search-bar{
+    border-radius: 0; 
+    height: 45px; 
+    padding: 15px; 
+}
+
+.input-group .btn {
+    border-radius: 10px; 
+    height: 50px; 
+    padding: 5px 10px; 
+    width: 30%;
+}
+
+.input-group .btn.search {
+    padding-top: 10px;
+}
+
+.content-container{
+    margin-left: 105px;
+    margin-right: 5px;
+}
+
+.button-array {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .button-array{
+        flex-direction: column;
+    }
+}
+  
+.button-array a button {    
+    color: white;
+    border-radius: 1.75em;
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border: none;
+    background: rgb(104,21,121);
+    transition: all 0.5s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+}
+
+.button-array a button:active {
+    box-shadow: 0 3px 0px 0px #d9d9d9;
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
+    
+}
+
+.button-array a button:hover {
+    box-shadow: 0 3px 0px 0px #d9d9d9;
+    cursor: pointer;
+    background-color: rgb(136, 60, 149)
+}
+
+.card {
+    margin-bottom: 15px;
+    background-color: rgb(157, 114, 165) !important;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+body.login-body {
+    background-image: url(../images/map_pic.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content-container.create {
+    background-image: url(../images/earth.png);
+    background-size: 85% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-text{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+    color: black;
+}
+
+#new-board{
+    display: flex;
+    justify-content: center;
+}
+
+#new-board p{
+    margin-top: 25px;
+}
+
+#new-board .search-container{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#new-board .search-container .btn-primary{
+    width: 140px;
+}
+
+
+@media (max-width: 1000px) {
+    #new-board{
+        flex-direction: column;
+    }
+    #new-board p{
+        margin-left: 25px;
+        margin-top: 5px;
+    }
+}
+
+.card.board{
+    border-radius: 1.25em; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 508px;
+}
+
+.card-body.board{
+    margin-top: 50%;
+    margin-bottom: 50%;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 3px solid rgb(104,21,121); 
+    border-radius: 1.25em; 
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.round-image {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+#aligned-username {
+    font-size: 23px;
+    color: #333;
+}
+
+#card-location {
+    font-size: 15px;
+    color: #333;
+}
+
+.aligned-name {
+    font-size: 35px;
+    color: #333;
+}
+
+.aligned-bio-info {
+    font-size: 18px;
+    color: #333;
+}
+
+.sign-out {
+    position: fixed;
+    top: 18px;
+    right: 20px;
+}
+
+.stats {
+    justify-content: center;
+    display: flex;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border: 3px solid green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.circle.green{
+    border: 3px solid green;
+}
+
+.circle.orange{
+    border: 3px solid rgb(237, 122, 60);
+}
+
+.circle.red{
+    border: 3px solid rgb(169, 12, 20);
+}
+
+.post-container {
+    outline: 4px solid rgb(104,21,121);
+    outline-width: 3px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 50%;
+    line-height: 40px;
+}
+
+@media (max-width: 1200px) {
+    .post-container{
+        width: 70%;
+    }
+}
+
+.post-pic {
+    max-width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+#name {
+    font-size: 23px;
+}
+  
+#loc {
+    font-size: 15px;
+}
+  
+#hash {
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+#inform {
+    font-weight: bold;
+    padding-left: 10%;
+}
+
+.basic-info{
+    display: flex;
+    margin-left: 10%;
+    line-height: 20px;
+}
+
+.fa-regular {
+    font-size: 25px;
+}
+  
+.save-post {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+.go-back-icon {
+    position: fixed;
+    top: 4%;
+    left: 10%; 
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    margin-top: 2.5%;
+}
+
+.chart {
+    display: flex;
+    width: 400px;
+    background-color: rgb(104, 21, 121);
+    border: 2px solid #000;
+}
+  
+.bar {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    color:black;
+    transition: height 0.5s;
+}
+
+.bar:not(:last-child) {
+    border-right: 2px solid #000; 
+}
+  
+table {
+    font-size: 25px;
+    font-weight: 500;
+}
+  
+#views, #saves {
+    font-size: 30px; 
+}
+  
+.row.stat .card{
+    height: 90%;
+    width:90%;
+    background-color: white !important;
+    border-radius: 20px;
+    border-color: rgb(104, 21, 121);
+    border-width: 3px;
+}
+  
+.row.stat{
+    margin-left: 3%;
+}
+  
